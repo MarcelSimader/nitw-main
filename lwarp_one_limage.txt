@@ -1,0 +1,6 @@
+pdfseparate -f %1 -l %1 %4_html.pdf Simader11823075_NightInTheWoods-images\lateximagetemp-%%d.pdf
+pdfcrop --hires Simader11823075_NightInTheWoods-images\lateximagetemp-%1.pdf Simader11823075_NightInTheWoods-images\%3.pdf
+pdftocairo -svg -noshrink Simader11823075_NightInTheWoods-images\%3.pdf Simader11823075_NightInTheWoods-images\%3.svg
+del Simader11823075_NightInTheWoods-images\%3.pdf
+del Simader11823075_NightInTheWoods-images\lateximagetemp-%1.pdf
+exit
